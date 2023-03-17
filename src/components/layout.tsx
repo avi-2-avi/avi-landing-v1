@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google";
+import { ReactNode } from "react";
 import Navbar from "./navbar";
 
 const poppins = Poppins({
@@ -7,10 +8,18 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
-const Layout = ({ children }) => {
+type LayoutProps = {
+  children: ReactNode;
+};
+
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <main className={`${poppins.className} font-sans`}>
+      <main
+        className={`${poppins.className} font-sans 
+        bg-background-light dark:bg-background-dark 
+        text-foreground-light dark:text-foreground-dark`}
+      >
         <Navbar />
         {children}
         <div className="flex justify-center py-10">
