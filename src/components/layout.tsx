@@ -15,11 +15,7 @@ type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <main
-        className={`${poppins.className} font-sans 
-        bg-background-light dark:bg-background-dark 
-        text-foreground-light dark:text-foreground-dark`}
-      >
+      <main className={`${poppins.className} font-sans`}>
         <Navbar />
         {children}
         <div className="flex justify-center py-10">
