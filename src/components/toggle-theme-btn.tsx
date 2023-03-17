@@ -1,4 +1,4 @@
-// import { motion } from "framer-motion";
+import "animate.css";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
@@ -18,14 +18,14 @@ const ToggleThemeButton = () => {
   if (currentTheme === "dark") {
     return (
       <LightModeOutlinedIcon
-        className="w-7 h-7"
+        className="w-7 h-7 animate__animated animate__fadeInUp animate__faster"
         onClick={() => setTheme("light")}
       />
     );
   } else {
     return (
       <DarkModeOutlinedIcon
-        className="w-7 h-7"
+        className="w-7 h-7 animate__animated animate__fadeInUp animate__faster"
         onClick={() => setTheme("dark")}
       />
     );
