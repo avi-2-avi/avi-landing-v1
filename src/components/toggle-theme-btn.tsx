@@ -1,8 +1,9 @@
-import "animate.css";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+
+import "animate.css";
 
 const ToggleThemeButton = () => {
   const { systemTheme, theme, setTheme } = useTheme();

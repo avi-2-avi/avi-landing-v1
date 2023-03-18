@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Layout from "../components/layout";
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
         <title>Cristina Vidal • Home</title>
         <meta name="description" content="Home page for Avi's personal site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/logo.svg" />
+        <link rel="icon" href="dark-logo.svg" />
       </Head>
 
       <Layout>

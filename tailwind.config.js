@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: "class",
@@ -13,7 +15,7 @@ module.exports = {
     colors: {
       // Light/Dark refers to the palette where it's used, not the actual color
       background: {
-        light: "#E5E9F0",
+        light: "#ECEFF4",
         dark: "#161526",
       },
       foreground: {
@@ -32,6 +34,10 @@ module.exports = {
         light: "#D08770",
         dark: "#F2EDA0",
       },
+    },
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
     },
     extend: {},
   },
