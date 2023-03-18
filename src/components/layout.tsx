@@ -17,9 +17,11 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <main className={`${poppins.className} font-sans`}>
         <Navbar />
-        {children}
+        <div className="container px-4 xs:px-8 sm:px-10 md:max-w-2xl xl:max-w-4xl mx-auto">
+          {children}
+        </div>
         <div className="flex justify-center py-10">
-          © 2023 Cristina Vidal. All Rights Reserved.
+          © {new Date().getFullYear()} Cristina Vidal. All Rights Reserved.
         </div>
       </main>
     </>

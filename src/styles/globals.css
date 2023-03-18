@@ -7,4 +7,12 @@
     @apply bg-background-light text-foreground-light dark:bg-background-dark dark:text-foreground-dark;
     @apply min-h-screen;
   }
+  h1 {
+    @apply text-3xl font-semibold;
+  }
+  h2 {
+    @apply text-lg font-medium;
+    @apply underline underline-offset-8;
+    @apply text-yellow-light dark:text-yellow-dark;
+  }
 }
