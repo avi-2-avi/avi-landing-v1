@@ -1,6 +1,6 @@
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
-import Navbar from "./navbar";
+import Navbar from "./Navbar";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],

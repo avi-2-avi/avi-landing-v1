@@ -4,17 +4,19 @@ import Link from "next/link";
 
 import { useTheme } from "next-themes";
 
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TelegramIcon from "@mui/icons-material/Telegram";
-import LocalLibraryOutlinedIcon from "@mui/icons-material/LocalLibraryOutlined";
-import ElectricScooterOutlinedIcon from "@mui/icons-material/ElectricScooterOutlined";
-import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
-import AirlineSeatIndividualSuiteOutlinedIcon from "@mui/icons-material/AirlineSeatIndividualSuiteOutlined";
-import KeyboardAltOutlinedIcon from "@mui/icons-material/KeyboardAltOutlined";
-import AttractionsOutlinedIcon from "@mui/icons-material/AttractionsOutlined";
+import {
+  EmailOutlined,
+  LinkedIn,
+  Telegram,
+  LocalLibraryOutlined,
+  ElectricScooterOutlined,
+  SchoolOutlined,
+  AirlineSeatIndividualSuiteOutlined,
+  KeyboardAltOutlined,
+  AttractionsOutlined,
+} from "@mui/icons-material";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -100,45 +102,45 @@ const Home = () => {
           <div className="grid grid-cols-2 md:grid-cols-3 my-12 md:mx-12">
             <div className="flex flex-col items-center mb-12">
               <p className="mb-2">Reading</p>
-              <LocalLibraryOutlinedIcon />
+              <LocalLibraryOutlined />
             </div>
             <div className="flex flex-col items-center mb-12">
               <p className="mb-2">Riding scooter</p>
-              <ElectricScooterOutlinedIcon />
+              <ElectricScooterOutlined />
             </div>
             <div className="flex flex-col items-center mb-12">
               <p className="mb-2">Learning</p>
-              <SchoolOutlinedIcon />
+              <SchoolOutlined />
             </div>
             <div className="flex flex-col items-center">
               <p className="mb-2">Napping</p>
-              <AirlineSeatIndividualSuiteOutlinedIcon />
+              <AirlineSeatIndividualSuiteOutlined />
             </div>
             <div className="flex flex-col items-center">
               <p className="mb-2">Touch Typing</p>
-              <KeyboardAltOutlinedIcon />
+              <KeyboardAltOutlined />
             </div>
             <div className="flex flex-col items-center">
               <p className="mb-2">Relaxing</p>
-              <AttractionsOutlinedIcon />
+              <AttractionsOutlined />
             </div>
           </div>
         </section>
         <section id="contact" className="pb-12">
           <h2 className="mb-6">How to reach me</h2>
           <div className="flex flex-row space-x-4 py-2">
-            <EmailOutlinedIcon />
-            <Link href="mailto:avicon95@proton.me">avicon95@proton.me</Link>
+            <EmailOutlined />
+            <Link href="mailto:av95@proton.me">avicon95@proton.me</Link>
           </div>
           <div className="flex flex-row space-x-4 py-2">
-            <LinkedInIcon />
+            <LinkedIn />
             <Link href="https://www.linkedin.com/in/cristina-vidal-falcon-1063311b1/">
               Cristina Vidal Falcon
             </Link>
           </div>
           <div className="flex flex-row space-x-4 py-2">
-            <TelegramIcon />
-            <Link href="tg://resolve?domain=avicon95">@avicon95</Link>
+            <Telegram />
+            <Link href="tg://resolve?domain=av95">@avicon95</Link>
           </div>
         </section>
       </Layout>

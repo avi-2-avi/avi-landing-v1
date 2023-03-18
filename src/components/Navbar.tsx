@@ -2,7 +2,7 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ToggleThemeButton from "./toggle-theme-btn";
+import ToggleThemeButton from "./ToggleThemeButton";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import { useState } from "react";
 
