@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import { ReactNode } from "react";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const poppins = Poppins({
@@ -20,9 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="container px-4 xs:px-8 sm:px-10 md:max-w-2xl xl:max-w-4xl mx-auto">
           {children}
         </div>
-        <div className="flex justify-center py-10 text-center">
-          © {new Date().getFullYear()} Cristina Vidal. All Rights Reserved.
-        </div>
+        <Footer />
       </main>
     </>
   );
