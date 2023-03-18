@@ -17,6 +17,7 @@ import {
 } from "@mui/icons-material";
 
 import Layout from "../components/Layout";
+import CheckCard from "@/components/CheckCard";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -69,7 +70,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-        <section id="about" className="pb-12">
+        <section id="about" className="pb-16">
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
               <h2>About me</h2>
@@ -125,6 +126,27 @@ const Home = () => {
               <AttractionsOutlined />
             </div>
           </div>
+        </section>
+        <section id="check" className="pb-8 pt-4">
+          <h2 className="mb-12">You should check my....</h2>
+          <CheckCard
+            image="/check-works.png"
+            title="Works Portafolio"
+            color="yellow"
+            reference="/works"
+          />
+          <CheckCard
+            image="/check-tools.png"
+            title="Tools for productivity"
+            color="red"
+            reference="/tools"
+          />
+          <CheckCard
+            image="/check-works.png"
+            title="Source Code of projects"
+            color="blue"
+            reference="https://github.com/avi-2-avi"
+          />
         </section>
         <section id="contact" className="pb-12">
           <h2 className="mb-6">How to reach me</h2>
