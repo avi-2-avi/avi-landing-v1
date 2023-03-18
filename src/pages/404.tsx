@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
+import Link from "next/link";
 
 const NotFound = () => {
   return (
@@ -18,7 +19,7 @@ const NotFound = () => {
         <p>The page you're looking for does not exist.</p>
         <div className="bg-foreground-light dark:bg-foreground-dark h-0.5 opacity-10 w-60 xs:w-96 mx-auto my-8" />
         <button className="mx-auto py-2 w-40 rounded-md hover:opacity-90 font-medium bg-blue-light dark:bg-blue-dark text-background-light dark:text-background-dark mb-12">
-          Return to home
+          <Link href="/">Return to home</Link>
         </button>
       </div>
     </Layout>
