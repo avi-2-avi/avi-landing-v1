@@ -1,11 +1,20 @@
 import Head from "next/head";
-import Layout from "../components/layout";
 import Image from "next/image";
+import Link from "next/link";
+
 import { useTheme } from "next-themes";
+
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import TelegramIcon from "@mui/icons-material/Telegram";
-import Link from "next/link";
+import LocalLibraryOutlinedIcon from "@mui/icons-material/LocalLibraryOutlined";
+import ElectricScooterOutlinedIcon from "@mui/icons-material/ElectricScooterOutlined";
+import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
+import AirlineSeatIndividualSuiteOutlinedIcon from "@mui/icons-material/AirlineSeatIndividualSuiteOutlined";
+import KeyboardAltOutlinedIcon from "@mui/icons-material/KeyboardAltOutlined";
+import AttractionsOutlinedIcon from "@mui/icons-material/AttractionsOutlined";
+
+import Layout from "../components/layout";
 
 const Home = () => {
   const { theme } = useTheme();
@@ -86,11 +95,34 @@ const Home = () => {
             live calmly.{" "}
           </p>
         </section>
-        <section id="hobbies" className="pb-12">
+        <section id="hobbies">
           <h2>What I enjoy</h2>
-        </section>
-        <section id="check" className="pb-12">
-          <h2>You should check my...</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 my-12 md:mx-12">
+            <div className="flex flex-col items-center mb-12">
+              <p className="mb-2">Reading</p>
+              <LocalLibraryOutlinedIcon />
+            </div>
+            <div className="flex flex-col items-center mb-12">
+              <p className="mb-2">Riding scooter</p>
+              <ElectricScooterOutlinedIcon />
+            </div>
+            <div className="flex flex-col items-center mb-12">
+              <p className="mb-2">Learning</p>
+              <SchoolOutlinedIcon />
+            </div>
+            <div className="flex flex-col items-center">
+              <p className="mb-2">Napping</p>
+              <AirlineSeatIndividualSuiteOutlinedIcon />
+            </div>
+            <div className="flex flex-col items-center">
+              <p className="mb-2">Touch Typing</p>
+              <KeyboardAltOutlinedIcon />
+            </div>
+            <div className="flex flex-col items-center">
+              <p className="mb-2">Relaxing</p>
+              <AttractionsOutlinedIcon />
+            </div>
+          </div>
         </section>
         <section id="contact" className="pb-12">
           <h2 className="mb-6">How to reach me</h2>
