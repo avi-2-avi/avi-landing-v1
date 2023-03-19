@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout from "@/components/Layout";
+import WideLayout from "@/components/WideLayout";
 
 const Tools = () => {
   return (
@@ -11,9 +11,9 @@ const Tools = () => {
         <link rel="icon" href="dark-logo.svg" />
       </Head>
 
-      <Layout>
+      <WideLayout>
         <h1>This is Tools</h1>
-      </Layout>
+      </WideLayout>
     </>
   );
 };

@@ -3,8 +3,6 @@ import { ReactNode, useEffect, useState } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-import "animate.css";
-
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
@@ -21,7 +19,6 @@ const Layout = ({ children }: LayoutProps) => {
   useEffect(() => {
     setLoaded(true);
   }, []);
-
   return (
     <div className="flex flex-col min-h-screen">
       <main className={`${poppins.className} font-sans flex-grow`}>
@@ -29,7 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div
           className={`opacity-0 transition-opacity ${
             loaded ? "opacity-100" : ""
-          } duration-500 container px-4 xs:px-8 sm:px-10 md:max-w-2xl xl:max-w-4xl mx-auto`}
+          } duration-500 container sx:max-w-3xl lg:max-w-4xl xl:max-w-6xl mx-auto`}
         >
           {children}
         </div>

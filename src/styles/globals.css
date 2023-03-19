@@ -5,7 +5,6 @@
 @layer base {
   body {
     @apply bg-background-light text-foreground-light dark:bg-background-dark dark:text-foreground-dark;
-    @apply min-h-screen;
   }
   h1 {
     @apply text-3xl font-semibold;
@@ -14,5 +13,18 @@
     @apply text-lg font-medium;
     @apply underline underline-offset-8;
     @apply text-yellow-light dark:text-yellow-dark;
+  }
+
+  table {
+    @apply min-w-full mb-12;
+  }
+  thead {
+    @apply text-left;
+  }
+  th {
+    @apply px-4 py-3 text-left;
+  }
+  td {
+    @apply px-4 py-2;
   }
 }
