@@ -1,6 +1,10 @@
 import TableLayout from "@/components/TableLayout";
 import Head from "next/head";
 
+import { LaunchOutlined, GitHub } from "@mui/icons-material";
+
+import Link from "next/link";
+
 const dummyData = [
   {
     id: 0,
@@ -8,13 +12,10 @@ const dummyData = [
     title: "Notes in Django",
     made_at: "-",
     built_with: ["React", "Django"],
-    links: [
-      {
-        source: "https://github.com/avi-2-avi",
-        presentation: "https://google.com",
-        design: "https://brave.com",
-      },
-    ],
+    links: {
+      source: "https://github.com/avi-2-avi",
+      presentation: "https://google.com",
+    },
   },
   {
     id: 1,
@@ -22,13 +23,10 @@ const dummyData = [
     title: "Notes in Django",
     made_at: "-",
     built_with: ["React", "Django"],
-    links: [
-      {
-        source: "https://github.com/avi-2-avi",
-        presentation: "https://google.com",
-        design: "https://brave.com",
-      },
-    ],
+    links: {
+      source: "https://github.com/avi-2-avi",
+      presentation: "https://google.com",
+    },
   },
   {
     id: 2,
@@ -36,13 +34,9 @@ const dummyData = [
     title: "Notes in Django",
     made_at: "-",
     built_with: ["React", "Django"],
-    links: [
-      {
-        source: "https://github.com/avi-2-avi",
-        presentation: "https://google.com",
-        design: "https://brave.com",
-      },
-    ],
+    links: {
+      source: "https://github.com/avi-2-avi",
+    },
   },
   {
     id: 3,
@@ -50,13 +44,9 @@ const dummyData = [
     title: "Notes in Django",
     made_at: "-",
     built_with: ["React", "Django"],
-    links: [
-      {
-        source: "https://github.com/avi-2-avi",
-        presentation: "https://google.com",
-        design: "https://brave.com",
-      },
-    ],
+    links: {
+      presentation: "https://google.com",
+    },
   },
   {
     id: 4,
@@ -64,13 +54,10 @@ const dummyData = [
     title: "Notes in Django",
     made_at: "-",
     built_with: ["React", "Django"],
-    links: [
-      {
-        source: "https://github.com/avi-2-avi",
-        presentation: "https://google.com",
-        design: "https://brave.com",
-      },
-    ],
+    links: {
+      source: "https://github.com/avi-2-avi",
+      presentation: "https://google.com",
+    },
   },
 ];
 
@@ -96,7 +83,7 @@ const Works = () => {
           <thead>
             <tr>
               <th className="w-1/12">Year</th>
-              <th className="w-4/12">Title</th>
+              <th className="w-3/12">Title</th>
               <th className="w-2/12 hidden md:table-cell">Made at</th>
               <th className="w-4/12 hidden md:table-cell">Built with</th>
               <th className="w-1/12">Link</th>
@@ -123,6 +110,24 @@ const Works = () => {
                       {tech} {index !== data.built_with.length - 1 ? " · " : ""}
                     </span>
                   ))}
+                </td>
+                <td className="space-x-3">
+                  {data.links.presentation !== undefined && (
+                    <Link
+                      href={data.links.presentation}
+                      className="hover:text-foreground-light hover:dark:text-foreground-dark"
+                    >
+                      <LaunchOutlined />
+                    </Link>
+                  )}
+                  {data.links.source !== undefined && (
+                    <Link
+                      href={data.links.source}
+                      className="hover:text-foreground-light hover:dark:text-foreground-dark"
+                    >
+                      <GitHub />
+                    </Link>
+                  )}
                 </td>
               </tr>
             ))}
