@@ -18,9 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="flex flex-col min-h-screen">
       <main className={`${poppins.className} font-sans flex-grow`}>
         <Navbar />
-        <div className="container px-4 xs:px-8 sm:px-10 md:max-w-2xl xl:max-w-4xl mx-auto">
-          {children}
-        </div>
+        <div className="container w-full">{children}</div>
       </main>
       <Footer />
     </div>
