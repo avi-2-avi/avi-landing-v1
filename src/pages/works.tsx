@@ -61,8 +61,6 @@ const worksList = [
   },
 ];
 
-// TODO: Correct links resizing
-
 const Works = () => {
   return (
     <>
@@ -84,11 +82,11 @@ const Works = () => {
         <table>
           <thead>
             <tr>
-              <th className="w-1/12">Year</th>
-              <th className="w-3/12">Title</th>
-              <th className="w-2/12 hidden md:table-cell">Made at</th>
-              <th className="w-4/12 hidden md:table-cell">Built with</th>
-              <th className="w-1/12">Link</th>
+              <th className="xl:w-1/12">Year</th>
+              <th className="xl:w-3/12">Title</th>
+              <th className="xl:w-2/12 hidden md:table-cell">Made at</th>
+              <th className="xl:w-4/12 hidden md:table-cell">Built with</th>
+              <th className="xl:w-1/12">Link</th>
             </tr>
           </thead>
           <tbody>
@@ -113,13 +111,13 @@ const Works = () => {
                     </span>
                   ))}
                 </td>
-                <td className="space-x-3">
+                <td className="space-x-2 xs:space-x-3">
                   {work.links.presentation !== undefined && (
                     <Link
                       href={work.links.presentation}
                       className="hover:text-foreground-light hover:dark:text-foreground-dark"
                     >
-                      <LaunchOutlined />
+                      <LaunchOutlined className="w-[22px] xs:w-[24px]" />
                     </Link>
                   )}
                   {work.links.source !== undefined && (
@@ -127,7 +125,7 @@ const Works = () => {
                       href={work.links.source}
                       className="hover:text-foreground-light hover:dark:text-foreground-dark"
                     >
-                      <GitHub />
+                      <GitHub className="w-[18px] xs:w-[24px]" />
                     </Link>
                   )}
                 </td>
