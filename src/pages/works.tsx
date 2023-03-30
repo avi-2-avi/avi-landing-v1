@@ -1,11 +1,11 @@
-import TableLayout from "@/components/TableLayout";
+import WideLayout from "@/components/WideLayout";
 import Head from "next/head";
 
 import { LaunchOutlined, GitHub } from "@mui/icons-material";
 
 import Link from "next/link";
 
-const dummyData = [
+const worksList = [
   {
     id: 0,
     year: 2022,
@@ -61,6 +61,8 @@ const dummyData = [
   },
 ];
 
+// TODO: Correct links resizing
+
 const Works = () => {
   return (
     <>
@@ -70,9 +72,9 @@ const Works = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="dark-logo.svg" />
       </Head>
-      <TableLayout>
+      <WideLayout>
         <div className="flex flex-col text-center md:text-start mx-4 my-12">
-          <h1>Works Portafolio</h1>
+          <h1 className="mb-4">Works Portafolio</h1>
           <h3>
             List of{" "}
             <span className="text-red-light dark:text-red-dark">stuff</span> I
@@ -90,9 +92,9 @@ const Works = () => {
             </tr>
           </thead>
           <tbody>
-            {dummyData.map((data, index) => (
+            {worksList.map((work, index) => (
               <tr
-                key={data.id}
+                key={index}
                 className={`${
                   (index + 1) % 3 === 0
                     ? "text-blue-light dark:text-blue-dark"
@@ -101,28 +103,28 @@ const Works = () => {
                     : "text-yellow-light dark:text-yellow-dark"
                 } hover:bg-foreground-dark hover:dark:bg-foreground-light`}
               >
-                <td className="font-medium">{data.year}</td>
-                <td className="font-medium">{data.title}</td>
-                <td className="hidden md:table-cell">{data.made_at}</td>
+                <td className="font-medium">{work.year}</td>
+                <td className="font-medium">{work.title}</td>
+                <td className="hidden md:table-cell">{work.made_at}</td>
                 <td className="hidden md:table-cell">
-                  {data.built_with.map((tech, index) => (
+                  {work.built_with.map((tech, index) => (
                     <span key={index} className="text-sm">
-                      {tech} {index !== data.built_with.length - 1 ? " · " : ""}
+                      {tech} {index !== work.built_with.length - 1 ? " · " : ""}
                     </span>
                   ))}
                 </td>
                 <td className="space-x-3">
-                  {data.links.presentation !== undefined && (
+                  {work.links.presentation !== undefined && (
                     <Link
-                      href={data.links.presentation}
+                      href={work.links.presentation}
                       className="hover:text-foreground-light hover:dark:text-foreground-dark"
                     >
                       <LaunchOutlined />
                     </Link>
                   )}
-                  {data.links.source !== undefined && (
+                  {work.links.source !== undefined && (
                     <Link
-                      href={data.links.source}
+                      href={work.links.source}
                       className="hover:text-foreground-light hover:dark:text-foreground-dark"
                     >
                       <GitHub />
@@ -133,7 +135,7 @@ const Works = () => {
             ))}
           </tbody>
         </table>
-      </TableLayout>
+      </WideLayout>
     </>
   );
 };

@@ -26,7 +26,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div
           className={`opacity-0 transition-opacity ${
             loaded ? "opacity-100" : ""
-          } duration-500 container w-full`}
+          } duration-500 container sx:max-w-3xl lg:max-w-4xl xl:max-w-full xl:px-6 2xl:px-20 mx-auto`}
         >
           {children}
         </div>
