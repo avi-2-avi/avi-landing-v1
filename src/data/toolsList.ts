@@ -6,15 +6,15 @@ const toolsList = [
     color: "red",
   },
   {
-    title: "Omen 16",
-    description: "Dual booting Linux and Windows.",
-    image: "/tools/omen-16.png",
-    color: "none",
-  },
-  {
     title: "NuPhy Halo65",
     description: "Typing fast and comfortably.",
     image: "/tools/nuphy.png",
+    color: "none",
+  },
+  {
+    title: "Omen 16",
+    description: "Dual booting Linux and Windows.",
+    image: "/tools/omen-16.png",
     color: "none",
   },
   {

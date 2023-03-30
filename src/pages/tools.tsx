@@ -22,7 +22,7 @@ const Tools = () => {
             use everyday that make my life easier
           </h3>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 pb-12">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 pb-12 ">
           {toolsList.map(({ title, description, image, color }, index) => (
             <ToolCard
               key={index}
