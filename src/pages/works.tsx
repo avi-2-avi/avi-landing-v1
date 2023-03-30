@@ -1,71 +1,16 @@
 import WideLayout from "@/components/WideLayout";
+import worksList from "../data/worksList";
+
 import Head from "next/head";
-
-import { LaunchOutlined, GitHub } from "@mui/icons-material";
-
 import Link from "next/link";
 
-const worksList = [
-  {
-    id: 0,
-    year: 2022,
-    title: "Notes in Django",
-    made_at: "-",
-    built_with: ["React", "Django"],
-    links: {
-      source: "https://github.com/avi-2-avi",
-      presentation: "https://google.com",
-    },
-  },
-  {
-    id: 1,
-    year: 2022,
-    title: "Notes in Django",
-    made_at: "-",
-    built_with: ["React", "Django"],
-    links: {
-      source: "https://github.com/avi-2-avi",
-      presentation: "https://google.com",
-    },
-  },
-  {
-    id: 2,
-    year: 2022,
-    title: "Notes in Django",
-    made_at: "-",
-    built_with: ["React", "Django"],
-    links: {
-      source: "https://github.com/avi-2-avi",
-    },
-  },
-  {
-    id: 3,
-    year: 2022,
-    title: "Notes in Django",
-    made_at: "-",
-    built_with: ["React", "Django"],
-    links: {
-      presentation: "https://google.com",
-    },
-  },
-  {
-    id: 4,
-    year: 2022,
-    title: "Notes in Django",
-    made_at: "-",
-    built_with: ["React", "Django"],
-    links: {
-      source: "https://github.com/avi-2-avi",
-      presentation: "https://google.com",
-    },
-  },
-];
+import { LaunchOutlined, GitHub } from "@mui/icons-material";
 
 const Works = () => {
   return (
     <>
       <Head>
-        <title>Cristina Vidal • Works</title>
+        <title>Cristina Vidal - Works</title>
         <meta name="description" content="Home page for Avi's personal site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="dark-logo.svg" />
@@ -90,47 +35,50 @@ const Works = () => {
             </tr>
           </thead>
           <tbody>
-            {worksList.map((work, index) => (
-              <tr
-                key={index}
-                className={`${
-                  (index + 1) % 3 === 0
-                    ? "text-blue-light dark:text-blue-dark"
-                    : (index + 1) % 2 === 0
-                    ? "text-red-light dark:text-red-dark"
-                    : "text-yellow-light dark:text-yellow-dark"
-                } hover:bg-foreground-dark hover:dark:bg-foreground-light`}
-              >
-                <td className="font-medium">{work.year}</td>
-                <td className="font-medium">{work.title}</td>
-                <td className="hidden md:table-cell">{work.made_at}</td>
-                <td className="hidden md:table-cell">
-                  {work.built_with.map((tech, index) => (
-                    <span key={index} className="text-sm">
-                      {tech} {index !== work.built_with.length - 1 ? " · " : ""}
-                    </span>
-                  ))}
-                </td>
-                <td className="space-x-2 xs:space-x-3">
-                  {work.links.presentation !== undefined && (
-                    <Link
-                      href={work.links.presentation}
-                      className="hover:text-foreground-light hover:dark:text-foreground-dark"
-                    >
-                      <LaunchOutlined className="w-[22px] xs:w-[24px]" />
-                    </Link>
-                  )}
-                  {work.links.source !== undefined && (
-                    <Link
-                      href={work.links.source}
-                      className="hover:text-foreground-light hover:dark:text-foreground-dark"
-                    >
-                      <GitHub className="w-[18px] xs:w-[24px]" />
-                    </Link>
-                  )}
-                </td>
-              </tr>
-            ))}
+            {worksList
+              .sort((a, b) => b.year - a.year)
+              .map((work, index) => (
+                <tr
+                  key={index}
+                  className={`${
+                    (index + 1) % 3 === 0
+                      ? "text-blue-light dark:text-blue-dark"
+                      : (index + 1) % 2 === 0
+                      ? "text-red-light dark:text-red-dark"
+                      : "text-yellow-light dark:text-yellow-dark"
+                  } hover:bg-foreground-dark hover:dark:bg-foreground-light`}
+                >
+                  <td className="font-medium">{work.year}</td>
+                  <td className="font-medium">{work.title}</td>
+                  <td className="hidden md:table-cell">{work.made_at}</td>
+                  <td className="hidden md:table-cell">
+                    {work.built_with.map((tech, index) => (
+                      <span key={index} className="text-sm">
+                        {tech}{" "}
+                        {index !== work.built_with.length - 1 ? " · " : ""}
+                      </span>
+                    ))}
+                  </td>
+                  <td className="space-x-2 xs:space-x-3">
+                    {work.links.presentation !== undefined && (
+                      <Link
+                        href={work.links.presentation}
+                        className="hover:text-foreground-light hover:dark:text-foreground-dark"
+                      >
+                        <LaunchOutlined className="w-[22px] xs:w-[24px]" />
+                      </Link>
+                    )}
+                    {work.links.source !== undefined && (
+                      <Link
+                        href={work.links.source}
+                        className="hover:text-foreground-light hover:dark:text-foreground-dark"
+                      >
+                        <GitHub className="w-[18px] xs:w-[24px]" />
+                      </Link>
+                    )}
+                  </td>
+                </tr>
+              ))}
           </tbody>
         </table>
       </WideLayout>

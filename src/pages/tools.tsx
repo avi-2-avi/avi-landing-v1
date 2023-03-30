@@ -7,7 +7,7 @@ const Tools = () => {
   return (
     <>
       <Head>
-        <title>Cristina Vidal • Tools</title>
+        <title>Cristina Vidal - Tools</title>
         <meta name="description" content="Home page for Avi's personal site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="dark-logo.svg" />

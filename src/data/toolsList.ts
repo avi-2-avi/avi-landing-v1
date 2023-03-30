@@ -1,4 +1,11 @@
-const toolsList = [
+interface Tool {
+  title: string;
+  description: string;
+  image: string;
+  color: string;
+}
+
+const toolsList: Array<Tool> = [
   {
     title: "Galaxy Tab S6 Lite",
     description: "Draw, read, and study.",
