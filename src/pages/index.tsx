@@ -89,7 +89,7 @@ const Home = () => {
                 alt="Penguin walking gif"
                 width={250}
                 height={250}
-                className="h-auto w-30"
+                className="w-auto h-48"
               />
             </div>
           </div>
