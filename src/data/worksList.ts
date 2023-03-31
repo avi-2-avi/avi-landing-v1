@@ -95,6 +95,16 @@ const worksList: Work[] = [
       presentation: "https://www.affinityroofingllc.com/",
     },
   },
+  {
+    year: 2022,
+    title: "Focus - Landing Page",
+    made_at: "-",
+    built_with: ["Bootstrap", "Javascript", "HTML", "CSS"],
+    links: {
+      presentation: "https://ifocusnow.github.io/focus-landing-page/",
+      source: "https://github.com/iFocusNow/focus-landing-page",
+    },
+  },
 ];
 
 export default worksList;
