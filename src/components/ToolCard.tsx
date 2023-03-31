@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "animate.css";
 
 type ToolCardProps = {
@@ -12,7 +12,7 @@ type ToolCardProps = {
 const ToolCard = ({ title, description, image, color }: ToolCardProps) => {
   const [backgroundColor, setBackgroundColor] = useState("");
 
-  const onLoadColors = () => {
+  const onLoadColors = useCallback(() => {
     if (color !== "none") {
       setBackgroundColor(
         () => "text-background-light dark:text-background-dark "
@@ -29,7 +29,7 @@ const ToolCard = ({ title, description, image, color }: ToolCardProps) => {
         );
       }
     }
-  };
+  }, []);
 
   useEffect(() => {
     onLoadColors();
