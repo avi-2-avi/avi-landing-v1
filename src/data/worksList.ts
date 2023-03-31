@@ -18,7 +18,7 @@ const worksList: Work[] = [
     made_at: "-",
     built_with: ["C++"],
     links: {
-      source: "https://github.com/avi-2-avi/TrabajoFinalDamas",
+      source: "https://github.com/avi-2-avi/Chess-plus-plus",
     },
   },
   {
