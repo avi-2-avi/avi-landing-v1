@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import ToggleThemeButton from "./ToggleThemeButton";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import "animate.css";
 
@@ -15,9 +15,9 @@ const Navbar = () => {
   const menuRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLDivElement>(null);
 
-  const onToggleMenu = () => {
+  const onToggleMenu = useCallback(() => {
     setIsMenuOpen(!isMenuOpen);
-  };
+  }, [isMenuOpen]);
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {

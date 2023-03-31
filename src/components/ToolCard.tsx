@@ -33,7 +33,7 @@ const ToolCard = ({ title, description, image, color }: ToolCardProps) => {
 
   useEffect(() => {
     onLoadColors();
-  }, []);
+  }, [onLoadColors]);
 
   return (
     <div
