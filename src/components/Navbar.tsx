@@ -94,11 +94,8 @@ const Navbar = () => {
       </div>
       <div className="flex space-x-4">
         <ToggleThemeButton />
-        <div ref={toggleRef}>
-          <MenuOutlinedIcon
-            className="w-7 h-7 block md:hidden"
-            onClick={onToggleMenu}
-          />
+        <div className="md:hidden" ref={toggleRef}>
+          <MenuOutlinedIcon className="w-7 h-7 block" onClick={onToggleMenu} />
         </div>
         <div
           ref={menuRef}
