@@ -59,13 +59,15 @@ const Works = () => {
                       </span>
                     ))}
                   </td>
-                  <td className="space-x-2 xs:space-x-3">
+                  <td className="space-2 xs:space-3">
                     {work.links.presentation !== undefined && (
                       <Link
                         href={work.links.presentation}
                         className="hover:text-foreground-light hover:dark:text-foreground-dark"
                       >
-                        <LaunchOutlined className="w-[22px] xs:w-[24px]" />
+                        <div className="w-[18px] xs:w-[24px] inline mr-1 mb-1">
+                          <LaunchOutlined />
+                        </div>
                       </Link>
                     )}
                     {work.links.source !== undefined && (
@@ -73,7 +75,9 @@ const Works = () => {
                         href={work.links.source}
                         className="hover:text-foreground-light hover:dark:text-foreground-dark"
                       >
-                        <GitHub className="w-[18px] xs:w-[24px]" />
+                        <div className="w-[18px] xs:w-[24px] inline">
+                          <GitHub />
+                        </div>
                       </Link>
                     )}
                   </td>
