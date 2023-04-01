@@ -96,7 +96,7 @@ const Navbar = () => {
         <ToggleThemeButton />
         <div ref={toggleRef}>
           <MenuOutlinedIcon
-            className="w-7 h-7 cursor-pointer block md:hidden "
+            className="w-7 h-7 block md:hidden"
             onClick={onToggleMenu}
           />
         </div>
