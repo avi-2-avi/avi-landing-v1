@@ -98,11 +98,38 @@ const worksList: Work[] = [
   {
     year: 2022,
     title: "Focus - Landing Page",
-    made_at: "-",
+    made_at: "iFocusNow",
     built_with: ["Bootstrap", "Javascript", "HTML", "CSS"],
     links: {
       presentation: "https://ifocusnow.github.io/focus-landing-page/",
       source: "https://github.com/iFocusNow/focus-landing-page",
+    },
+  },
+  {
+    year: 2023,
+    title: "KudasAI",
+    made_at: "NTT Data Hackathon",
+    built_with: ["Express", "Next.js", "Node.js", "MongoDB"],
+    links: {
+      source: "https://github.com/avi-2-avi/kudasai",
+    },
+  },
+  {
+    year: 2023,
+    title: "Focus - Frontend Application",
+    made_at: "iFocusNow",
+    built_with: ["Angular", "Typescript", "Docker"],
+    links: {
+      source: "https://github.com/iFocusNow/focus-front",
+    },
+  },
+  {
+    year: 2023,
+    title: "Focus - Backend Application",
+    made_at: "iFocusNow",
+    built_with: ["Springboot", "Java", "Docker", "PostgreSQL"],
+    links: {
+      source: "https://github.com/iFocusNow/focus-back",
     },
   },
 ];

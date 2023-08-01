@@ -14,6 +14,7 @@ import {
   AirlineSeatIndividualSuiteOutlined,
   KeyboardAltOutlined,
   AttractionsOutlined,
+  ComputerOutlined,
 } from "@mui/icons-material";
 
 import Layout from "../components/Layout";
@@ -53,7 +54,7 @@ const Home = () => {
                   /
                   <span className="text-blue-light dark:text-blue-dark">
                     {" "}
-                    Industrial{" "}
+                    Cloud{" "}
                   </span>
                   )
                 </h3>
@@ -75,12 +76,12 @@ const Home = () => {
             <div>
               <h2>About me</h2>
               <p className="py-6 text-justify">
-                Cristina Vidal is currently a student of Systems Engineering who
-                got the opportunity to study a second career, Industrial
-                Engineering. In her free time, she code, learns systems design
-                and makes whatever project comes to her mind. She has worked in
-                the past as a Back-end Engineer and is working towards becoming
-                a Full Stack Engineer in the future.
+                Cristina Vidal is a Software Technical Engineer specializing in
+                Cloud and Networking, and a Systems Engineering student. In her
+                free time, she codes, studies for certifications, and makes
+                whatever project comes to her mind. She has professional
+                experience as a Back-end Engineer and is working towards
+                becoming a Solutions Architect.
               </p>
             </div>
             <div className="flex justify-center pt-2 md:pt-14 lg:pt-8 pb-10 px-10">
@@ -106,8 +107,8 @@ const Home = () => {
               <LocalLibraryOutlined />
             </div>
             <div className="flex flex-col items-center mb-12">
-              <p className="mb-2">Riding scooter</p>
-              <ElectricScooterOutlined />
+              <p className="mb-2">Coding</p>
+              <ComputerOutlined />
             </div>
             <div className="flex flex-col items-center mb-12">
               <p className="mb-2">Learning</p>
