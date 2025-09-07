@@ -15,12 +15,13 @@
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
+- [📝 Table of Contents](#-table-of-contents)
+- [🧐 About ](#-about-)
+- [🏁 Getting Started ](#-getting-started-)
 
 ## 🧐 About <a name = "about"></a>
 
-This site was build using Next.js (Typescript), TailwindCSS and a lot of love :) Before building the site, I made the design using Figma, which helped me know where each component was meant to be and how to mix colours correctly.
+This site was build using Next.js (Typescript), TailwindCSS and a lot of love :) Before building the site, I made the design on my own using Figma back in 2023, which helped me know where each component was meant to be and how to mix colours correctly.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
