@@ -72,7 +72,7 @@ const Navbar = () => {
             }
             href="/works"
           >
-            Works
+            Side Works
           </Link>
           <Link
             className={

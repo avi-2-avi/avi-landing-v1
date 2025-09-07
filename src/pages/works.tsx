@@ -10,18 +10,18 @@ const Works = () => {
   return (
     <>
       <Head>
-        <title>Cristina Vidal - Works</title>
+        <title>Cristina Vidal - Side Works</title>
         <meta name="description" content="Home page for Avi's personal site" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="dark-logo.svg" />
       </Head>
       <WideLayout>
         <div className="flex flex-col text-center md:text-start mx-4 my-12">
-          <h1 className="mb-4">Works Portafolio</h1>
+          <h1 className="mb-4">Side Works Portafolio</h1>
           <h3>
             List of{" "}
-            <span className="text-red-light dark:text-red-dark">stuff</span> I
-            have made
+            <span className="text-red-light dark:text-red-dark">programs</span>{" "}
+            I have as side projects
           </h3>
         </div>
         <table>

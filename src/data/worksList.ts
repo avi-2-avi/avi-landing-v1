@@ -132,6 +132,99 @@ const worksList: Work[] = [
       source: "https://github.com/iFocusNow/focus-back",
     },
   },
+  {
+    year: 2024,
+    title: "LearnBee App",
+    made_at: "LearnBee",
+    built_with: ["React.js", "Typescript", "Firebase", "Docker", "AWS"],
+    links: {
+      source: "https://github.com/avi-2-avi/learnbee-app",
+    },
+  },
+  {
+    year: 2024,
+    title: "Sacat - Frontend Application",
+    made_at: "Sacat",
+    built_with: ["Nuxt.js", "Typescript", "TailwindCSS"],
+    links: {
+      source: "https://github.com/SaCat-Fintech/app-frontend",
+    },
+  },
+  {
+    year: 2024,
+    title: "Anbumanga - Data Analytics & Machine Learning Insights",
+    made_at: "Anbumanga",
+    built_with: [
+      "Python",
+      "Pandas",
+      "Numpy",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+    ],
+    links: {
+      source: "https://github.com/avi-2-avi/manga-store-data-analysis",
+    },
+  },
+  {
+    year: 2024,
+    title: "Detection of Cardiovascular Anomalies Research",
+    made_at: "-",
+    built_with: [
+      "Pytorch",
+      "Deep Learning",
+      "ESP32",
+      "IoT",
+      "Healthcare applications of Machine Learning",
+    ],
+    links: {},
+  },
+  {
+    year: 2025,
+    title: "Stockable Site",
+    made_at: "-",
+    built_with: [
+      "Vue.js",
+      "Typescript",
+      "CockroachDB",
+      "Golang",
+      "Docker",
+      "AWS",
+    ],
+    links: {
+      source: "https://github.com/avi-2-avi/stockable",
+    },
+  },
+  {
+    year: 2025,
+    title: "AI Connect - Landing Page",
+    made_at: "AI Connect",
+    built_with: ["Astro", "Javascript", "HTML", "CSS"],
+    links: {
+      source: "https://github.com/avi-2-avi/ai-connect-landing-v2",
+      presentation: "https://www.aiconnectlatam.com/",
+    },
+  },
+  {
+    year: 2025,
+    title: "Frost Forecast & Prediction Research",
+    made_at: "-",
+    built_with: [
+      "Python",
+      "Pytorch",
+      "Matplotlib",
+      "Deep Learning",
+      "Time Series",
+    ],
+    links: {},
+  },
+  {
+    year: 2025,
+    title: "Electric Meter OCR Detection Research",
+    made_at: "-",
+    built_with: ["Python", "Numpy", "YOLOv8", "Computer Vision"],
+    links: {},
+  },
 ];
 
 export default worksList;
